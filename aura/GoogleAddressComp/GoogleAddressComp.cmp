@@ -1,0 +1,27 @@
+<aura:component >
+    <!-- Address to send Google to get more information -->
+    <aura:attribute name="address" type="String" access="global" />
+
+    <!-- Message information for ui:message component -->
+    <aura:attribute name="msg" type="String" default=""/>
+    <aura:attribute name="msgSeverity" type="String" />
+    <aura:attribute name="msgTitle" type="String" />
+
+    <aura:registerEvent name="searchPlace" type="c:SearchPlace" />
+
+    <!-- Add call ajax component to use aura:method -->
+    <c:CallAjaxComp aura:id="utils" />
+
+    <div class="c-container">
+        <lightning:layout horizontalAlign="center" multipleRows="true" >
+           <lightning:layoutItem >
+               <lightning:input type="text" label="Enter a Place" name="{!v.address}" value="{!v.address}" />
+           </lightning:layoutItem>
+
+            <lightning:layoutItem class="search-button" padding="around-small">
+                <lightning:button variant="brand" label="Search" title="Brand action" onclick="{!c.buttonPress}" press="{!c.buttonPress}" />
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+
+</aura:component>

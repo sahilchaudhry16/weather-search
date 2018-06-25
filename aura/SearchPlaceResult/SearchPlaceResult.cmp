@@ -1,0 +1,23 @@
+<!--
+ - Created by schaudhry on 6/24/18.
+ -->
+
+<aura:component description="SearchPlaceResult">
+    <aura:attribute name="weatherObj" type="Object" />
+    <aura:attribute name="loadData" type="Boolean" default="false"/>
+
+    <aura:if isTrue="{!v.loadData}">
+        <lightning:spinner variant="brand"  size="large" />
+    </aura:if>
+    <aura:if isTrue="{!v.weatherObj}">
+        <p><lightning:formattedText class="city-name" value="{!v.weatherObj.title}" /></p>
+
+                <aura:iteration items="{!v.weatherObj.consolidated_weather}" var="climate">
+                    <c:WeatherDetails detailObj="{!climate}"/>
+                </aura:iteration>
+          
+        <!--<aura:set attribute="else">-->
+            <!--<div class="slds-align_absolute-center">No Weather Data</div>-->
+        <!--</aura:set>-->
+    </aura:if>
+</aura:component>

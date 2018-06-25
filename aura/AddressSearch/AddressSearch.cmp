@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" controller="MetaWeatherAPIHandler">
+    <aura:handler name="searchPlace" event="c:SearchPlace" action="{!c.onPlaceSearch}" />
+    <aura:attribute name="weatherObj" type="Object" />
+    <aura:attribute name="loadData" type="Boolean" default="false"/>
+    <lightning:card title="Enter Any Address to See its Weather!" class="slds-m-bottom_10px" >
+        <c:GoogleAddressComp />
+    </lightning:card>
+    <div>
+        <c:SearchPlaceResult weatherObj="{!v.weatherObj}" loadData="{!v.loadData}"/>
+    </div>
+</aura:component>

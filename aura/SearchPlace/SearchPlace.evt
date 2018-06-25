@@ -1,0 +1,8 @@
+<!--
+ - Created by schaudhry on 6/24/18.
+ -->
+
+<aura:event type="COMPONENT" description="SearchPlace">
+    <aura:attribute name="lat" type="String" />
+    <aura:attribute name="long" type="String" />
+</aura:event>

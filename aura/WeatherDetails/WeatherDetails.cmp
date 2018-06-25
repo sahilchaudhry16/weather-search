@@ -1,0 +1,23 @@
+<aura:component description="WeatherDetails">
+    <aura:attribute name="detailObj" type="Object" />
+        <lightning:card title="{!v.detailObj.formattedDate}">
+            <p style="float: right">
+                <img class="image-style" src="{!$Resource.weather_images + '/img/'+v.detailObj.weather_state_abbr+'.svg'}" />
+            </p>
+            <p class="slds-p-horizontal_small card-text">
+                {!v.detailObj.weather_state_name}
+            </p>
+            <p class="slds-p-horizontal_small card-text">
+                Average : <lightning:formattedNumber value="{!v.detailObj.the_temp}" maximumFractionDigits="0"/> &deg;C
+            </p>
+            <p class="slds-p-horizontal_small card-text">
+                Minimum : <lightning:formattedNumber value="{!v.detailObj.min_temp}" maximumFractionDigits="0"/> &deg;C
+            </p>
+            <p class="slds-p-horizontal_small card-text">
+                Maximum : <lightning:formattedNumber value="{!v.detailObj.max_temp}" maximumFractionDigits="0"/> &deg;C
+            </p>
+            <p class="slds-p-horizontal_small card-text">
+                Humidity : {!v.detailObj.humidity}%
+            </p>
+        </lightning:card>
+</aura:component>

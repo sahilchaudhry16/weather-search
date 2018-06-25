@@ -1,0 +1,99 @@
+/**
+ * Created by schaudhry on 6/24/18.
+ */
+
+
+.THIS .body {
+    background:#dbdbdb;
+}
+.THIS .clear {
+    clear:both;
+}
+
+.THIS .city-name {
+    font-size: 50px;
+}
+.THIS .card {
+    width:25em;
+    min-height:22.5em;
+    background: #fff;
+    margin:2em auto;
+    border-radius: .2em;
+    padding-top:1em;
+    padding-left: 1em;
+    padding-right:1em;
+}
+.THIS .city {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.8em;
+    color:#5b5b5b;
+}
+.THIS .menu {
+    float: right;
+    font-family: Roboto;
+    font-size:.5em;
+    color:#5b5b5b;
+    margin-top:-.09em;
+    margin-right:-2em;
+    list-style:square;
+}
+.THIS .sun {
+    width:4em;
+    height:4em;
+    border-radius: 2.5em;
+    background: #FBD80A;
+    margin-top: 1em;
+}
+.THIS .temp {
+    float:right;
+    font-family:Roboto;
+    font-weight: 300;
+    font-size: 8.5em;
+    margin-top:-.75em;
+    color:#5b5b5b;
+}
+.THIS .variations {
+    font-family:Roboto;
+    font-wight:300;
+    color:#8c8c8c;
+    list-style:none;
+    margin-left:-2em;
+}
+.THIS .mph {
+    font-size:.8em;
+}
+.THIS .speed:before {
+    content:url('https://i.imgur.com/luN0Jmq.png');
+}
+.THIS .forecast {
+    width:100%;
+    margin:0 auto;
+}
+.THIS .day {
+    display:block;
+    width: 21.5%;
+    height:9em;
+    float:left;
+    margin: 0 .375em .5em;
+    text-align:center;
+    font-family:Roboto;
+    color: #5b5b5b;
+    border-right:.1em solid #d9d9d9;
+    line-height: 2;
+}
+.THIS .fri {
+    border-right:none;
+}
+.THIS .highTemp {
+    font-weight:bold;
+}
+.THIS .lowTemp {
+    color: #8c8c8c;
+}
+.THIS .cloudy {
+    content: url('https://i.imgur.com/0PIYfV8.png');
+}
+.THIS .sunny {
+    content: url('https://i.imgur.com/RdBr2SD.png');
+}
