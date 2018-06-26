@@ -22,7 +22,7 @@ public without sharing class MetaWeatherAPIHandler {
         HttpRequest req = new HttpRequest();
         //req.setEndpoint('callout:Meta_Weather'); //Named Credentials
         String urlParam = latitude+','+longitude;
-        System.debug('urlParam--> '+urlParam);
+        //System.debug('urlParam--> '+urlParam);
         req.setEndpoint('https://www.metaweather.com/api/location/search/?lattlong='+urlParam);
         req.setMethod('GET');
         Http http = new Http();
