@@ -8,7 +8,7 @@
                 {!v.detailObj.weather_state_name}
             </p>
             <p class="slds-p-horizontal_small card-text">
-                Average : <lightning:formattedNumber value="{!v.detailObj.the_temp}" maximumFractionDigits="0"/> &deg;C
+                Current Temperature : <lightning:formattedNumber value="{!v.detailObj.the_temp}" maximumFractionDigits="0"/> &deg;C
             </p>
             <p class="slds-p-horizontal_small card-text">
                 Minimum : <lightning:formattedNumber value="{!v.detailObj.min_temp}" maximumFractionDigits="0"/> &deg;C
